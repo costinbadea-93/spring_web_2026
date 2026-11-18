@@ -8,4 +8,5 @@ public interface BankAccountService {
      BankAccount addNewBankAccount(BankAccount bankAccount);
      List<BankAccount> retrieveAllAccounts();
      BankAccount findByAccountNumber(String accountNumber);
+     int updateBalance(String accountNumber, double newBalance, String ifMatch);
 }
